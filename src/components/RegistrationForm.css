@@ -1,0 +1,75 @@
+/* Center the container vertically and horizontally */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #a8e6cf, #dcedc1); /* mint green gradient */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main form container */
+.form-container {
+  width: 380px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #4e342e; /* chocolate brown */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #dcedc1; /* light mint */
+  font-size: 24px;
+}
+
+/* Input fields */
+form input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid #a1887f; /* light brown border */
+  border-radius: 6px;
+  background-color: #f1f8e9;
+  font-size: 15px;
+}
+
+/* Submit button */
+button {
+  background: #a5d6a7; /* soft mint */
+  color: #4e342e; /* chocolate text */
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #81c784; /* darker mint */
+}
+
+/* Error and success messages */
+.error {
+  color: #ffccbc; /* light red-tint for chocolate background */
+  margin-top: 10px;
+}
+
+.success {
+  color: #c8e6c9; /* mint success */
+  margin-top: 10px;
+}
+
+/* Dark grey password dots */
+form input[type="password"] {
+  -webkit-text-security: disc; /* ensures dot-style masking */
+  color: #444; /* dark grey dots */
+}
